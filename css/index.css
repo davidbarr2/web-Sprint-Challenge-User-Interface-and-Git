@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -47,6 +47,7 @@ table {
 	border-spacing: 0;
 }
 
+/* General Styles */
 * {
     box-sizing: border-box;
 }
@@ -54,6 +55,11 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -66,10 +72,37 @@ p {
     line-height: 1.4;
 }
 
-.container {
-    width: 800px;
-    margin: 0 auto;
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1%;
 }
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 2% 0%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 70%
+}
+
+.logo {
+    width: 25%;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Top Content Styles */
 
 .top-content {
     display: flex;
@@ -84,6 +117,8 @@ p {
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/* Middle Content Styles */
 
 .middle-content {
     margin-bottom: 20px;
@@ -112,6 +147,48 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box.one{
+    background-color: teal;
+}
+
+.middle-content .boxes .box.two{
+    background-color: gold;
+}
+
+.middle-content .boxes .box.three{
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box.four{
+    background-color: coral;
+}
+
+.middle-content .boxes .box.five{
+    background-color: crimson;
+}
+
+.middle-content .boxes .box.six{
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box.seven{
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box.eight{
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box.nine{
+    background-color: indigo;
+}
+
+.middle-content .boxes .box.ten{
+    background-color: dodgerblue;
+}
+
+/* Bottom Content Styles */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -125,6 +202,8 @@ p {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+/* Footer Styles */
 
 footer {
     width: 100%;
@@ -143,4 +222,56 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* 
+ABOUT.HTML
+ */
+
+html .about-page {
+    font-size: 62.5%;
+}
+
+.about-page h2 {
+    font-size: 1rem;
+} 
+
+.about-page p{
+    font-size: 0.75rem;
+}
+
+/*  Details Styling */
+.details{
+    margin: 10px;
+}
+
+/* Gallery Styling */
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px dotted grey;
+    padding: 1% 0%;
+}
+
+.square{
+    border-bottom: 1px dotted gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    margin: 1%;
+    padding-bottom: 2%;;
+}
+
+.gallery h2{
+    margin: 2% 0;
+}
+
+.gallery button{
+    border-radius: 1%;
+    padding: 1% 2%;
+    width: 30%;
+    margin-top: 1%;
+    background-color: white;
 }
